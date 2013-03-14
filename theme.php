@@ -1,21 +1,19 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
 
-/*
-** @date	11 sept 2012
-** @author	PyroCMS France dev team
-**
-** This is a free HTML5 & CSS3 web template for PyroCMS.
-*/
+/**
+ * @date	14 Mar 2013
+ * @author	Antoine Benevaut
+ */
 
-class Theme_Monk extends Theme
+class Theme_Bootswatch extends Theme
 {
   public $version		= '1.0';
 
-  public $name			= 'Monk';
-  public $author		= 'PyroCMS France';
-  public $author_website	= 'http://www.pyrocms.fr';
-  public $description	= 'Standards: HTML5, CSS3';
-  public $website		= 'http://www.makimyers.co.uk';
+  public $name			= 'Bootswatch';
+  public $author		= 'Antoine Benevaut';
+  public $author_website	= 'http://cavaencoreparlerdebits.fr';
+  public $description	= 'Bootswatch HTML responsive template, based on Bootstrap.';
+  public $website		= 'http://bootswatch.com';
   public $options 		= array(
 		'show_breadcrumbs' 	=> array(
 			'title'         => 'Do you want to show breadcrumbs?',
@@ -28,4 +26,4 @@ class Theme_Monk extends Theme
 	);
 }
 /* End of file theme.php */
-/* ./Monk/theme.php */
+/* ./Bootstrap/theme.php */
