@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{ theme:partial name="metadata" }}
+  </head>
+  <body class="preview" data-spy="scroll" data-target=".subnav" data-offset="80">
+    <script src="../js/bsa.js"></script>
+  <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-fixed-top">
+      {{ theme:partial name="header" }}
+    </div>
+
+    <div class="container">
+      {{ theme:partial name="breadcrumbs"}}
+      {{ session:messages success="alert alert-success" notice="alert alert-block" error="alert alert-error" }}
+      
+      {{ template:body }}
+
+      <br><br><br><br>
+
+  <!-- Footer
+    ================================================== -->
+      <hr>
+
+      <footer id="footer">
+        {{ theme:partial name="footer" }}
+      </footer>
+
+    </div><!-- /container -->
+
+  <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    {{ theme:js file="bootstrap.min.js" }}
+    {{ theme:js file="application.js" }}
+    {{ theme:js file="bootswatch.js" }}
+  </body>
+</html>
