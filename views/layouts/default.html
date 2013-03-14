@@ -11,17 +11,39 @@
       {{ theme:partial name="header" }}
     </div>
 
+  <!-- Masthead
+    ================================================== -->
+    <header class="jumbotron subhead" id="overview">
+      <div class="row">
+        <div class="span12">
+        <p>
+          {{ theme:image file="logo.png" }}
+        </p>
+        </div>
+      </div>
+      <div class="subnav">
+        <ul class="nav nav-pills">
+          <li><a href="#typography">Typography</a></li>
+          <li><a href="#navbar">Navbar</a></li>
+          <li><a href="#buttons">Buttons</a></li>
+          <li><a href="#forms">Forms</a></li>
+          <li><a href="#tables">Tables</a></li>
+          <li><a href="#miscellaneous">Miscellaneous</a></li>
+        </ul>
+      </div>
+    </header>
+
     <div class="container">
       {{ theme:partial name="breadcrumbs"}}
       {{ session:messages success="alert alert-success" notice="alert alert-block" error="alert alert-error" }}
       
       {{ template:body }}
 
-      <br><br><br><br>
+      <br/><br/><br/><br/>
 
   <!-- Footer
     ================================================== -->
-      <hr>
+      <hr/>
 
       <footer id="footer">
         {{ theme:partial name="footer" }}
